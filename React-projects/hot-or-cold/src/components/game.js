@@ -21,6 +21,27 @@ export default class Game extends React.Component {
         const guesses = this.props.history.map((guess, index) => 
             <li key={index}>{guess}</li>
         );
+        if(this.props.feedback === "You Won! Click new game to play again"){
+            return (
+                <section className="game">
+                    <h2>{this.props.feedback}</h2>
+                    <form onSubmit={e => this.sendGuessToParent(e)}> 
+                        <input type="text" onChange={input => this.setState({text:input.target.value})}
+                        placeholder="Enter your Guess" 
+                        id="userGuess" 
+                        className="text" 
+                        name="userGuess" required/>
+                        
+                    </form>
+                    <p>
+                        Guess #<span id="count">{this.props.history.length}</span>!
+                    </p>
+                    <ul id="guessList" className="guessBox clearfix">
+                        {guesses}
+                    </ul>
+                </section>
+            );
+        }
         return (
             <section className="game">
                 <h2>{this.props.feedback}</h2>
