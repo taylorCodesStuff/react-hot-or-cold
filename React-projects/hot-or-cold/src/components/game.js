@@ -3,7 +3,7 @@ import './game.css';
 
 export default function Game() {
     return (
-        <section>
+        <section className="game">
             <h2>Make your Guess!</h2>
             <form>
                 <input type="text" placeholder="Enter your Guess" id="userGuess" className="text" name="userGuess"  required/>
