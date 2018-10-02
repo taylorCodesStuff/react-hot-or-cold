@@ -11,7 +11,7 @@ export default function Nav(props) {
                         <a className="what" href="#">WHAT?</a>
                     </li>
                     <li id="new">
-                        <a className="new" href="#">+ NEW GAME</a>
+                        <a className="new" href="#" onClick={() => props.onClick()}>+ NEW GAME</a>
                     </li>
                 </ul>
             </nav>

@@ -76,3 +76,12 @@ ul.guessBox {
     color: #fff;
     overflow: auto; 
 }
+
+ul.guessBox li {
+    display: inline;
+    background-color: #1a4e95;
+    padding: 0.3em;
+    border-radius: 4px;
+    margin: 0.2em;
+    color: #fff;
+}
