@@ -1,4 +1,1 @@
-# Javascript-Toy-Problems
-# Javascript-Toy-Problems
-# Javascript-Toy-Problems
-# Javascript-Toy-Problems
+# React number guessing game
